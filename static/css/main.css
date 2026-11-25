@@ -3,10 +3,19 @@ body {
 }
 
 .hero {
-    background-image: url("../image/FON.png");
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../image/FON.png");
+
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
 
     min-height: 600px;
+}
+    
+
+.site-header {
+    background-color: rgb(49, 4, 4);
+
 }
