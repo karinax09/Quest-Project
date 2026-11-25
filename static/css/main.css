@@ -1,10 +1,22 @@
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
 body {
     margin: 0;
 }
 
 .hero {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("../image/FON.png");
 
     background-size: cover;
@@ -143,12 +155,36 @@ body {
 
 .second-section {
     min-height: 100vh;
-
-    background-image: url("../image/FON2.png.jpeg");
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../image/FON2.2.jpeg");
     background-size: cover;
     background-position: center;
 
     padding: 100px 8%;
     color: white;
 }
-                                                           
+
+.second-section h1 {
+
+    margin-left: 350px;
+    margin-top: 40px;
+}
+
+
+                                                                              /* Уровни */
+
+.level {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../image/fon.level.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 100px 8%;
+    color: white;
+
+
+}
+           

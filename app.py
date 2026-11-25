@@ -8,5 +8,12 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/levels")
+def levels():
+    return render_template("levels.html")
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

@@ -9,6 +9,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{%block title%}{%endblock%}</title>
 </head>
 <body>
@@ -33,7 +35,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="#" title="Нажми чтобы перейти" class="nav-link">
+           <a href="{{ url_for('levels') }}" class="nav-link">
                 Уровни
             </a>
         </li>
