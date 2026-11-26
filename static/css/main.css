@@ -187,4 +187,149 @@ body {
 
 
 }
-           
+
+
+.level {
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Три карточки на фоне */
+.levels-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+      /* Прямоугольники */
+.level-card {
+    width: 350px;
+    height: 450px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid #750000;
+    border-radius: 15px;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Описание */
+
+.level-card p {
+    color: #ccc;
+    font-size: 17px;
+}
+
+
+
+                                                   /* Шапка карточки */
+
+.level-card-header {
+    text-align: left;
+}
+
+.level-number {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.level-card-header h3 {
+    color: #b30000;
+    font-size: 38px;
+    letter-spacing: 4px;
+    margin: 0;
+    text-shadow: 0 0 12px rgba(180, 0, 0, 0.4);
+}
+
+.level-name {
+    display: block;
+    color: #aaa;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+                                                                 /* Красная линия */
+
+.level-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        #900000,
+        transparent
+    );
+    margin: 20px 0;
+}
+
+                                                                 /* текст или список */
+
+.level-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.level-features li {
+    position: relative;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+
+    padding-left: 18px;
+    margin-bottom: 14px;
+}
+
+.level-features li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+
+    color: #b30000;
+    font-size: 20px;
+}
+
+                                                                 /* описаниее внизу которое */
+
+.level-description {
+    .level-description {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin-top: auto;
+    padding: 12px;
+
+    background: rgba(100, 0, 0, 0.12);
+    border-left: 2px solid #800000;
+    text-align: left;
+}
+
+.description-mark {
+    color: #b30000;
+    font-size: 16px;
+}
+
+.level-description p {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0;
+}
