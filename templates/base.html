@@ -29,13 +29,13 @@
     <ul class="site-nav">
 
         <li class="nav-item">
-            <a href="#" title="Нажми чтобы перейти" class="nav-link active" aria-current="page">
+            <a href="{{ url_for('index') }}" title="Нажми чтобы перейти" class="nav-link active" aria-current="page">
                 Главная
             </a>
         </li>
 
         <li class="nav-item">
-           <a href="{{ url_for('levels') }}" class="nav-link">
+           <a href="{{ url_for('levels') }}" title="Нажми чтобы перейти" class="nav-link">
                 Уровни
             </a>
         </li>
