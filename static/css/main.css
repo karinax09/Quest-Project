@@ -524,6 +524,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     display: flex;
     align-items: center;
@@ -630,86 +631,183 @@ body {
     background-attachment: fixed;
 }
 
-.characters {
-    max-width: 1100px;
-    margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
+.actor-second-content {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 35px;
 }
 
-/* Карточка */
+.section-label {
+    color: #a83232;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
 
+.actor-second-content h2 {
+    color: #fff;
+    font-size: 42px;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+.section-line {
+    width: 65px;
+    height: 2px;
+    background: #a83232;
+    margin-bottom: 22px;
+}
+
+.actor-second-content h3 {
+    color: #d5ccc4;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.actor-second-content p {
+    color: #aaa19a;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.section-warning {
+    display: block;
+    color: #a83232;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .actor-second-content {
+        padding-top: 60px;
+    }
+
+    .actor-second-content h2 {
+        font-size: 29px;
+    }
+
+    .actor-second-content h3 {
+        font-size: 17px;
+    }
+}
+
+
+                                               /* Контейнер всех персонажей */
+.characters {
+    width: 90%;
+    max-width: 1250px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+                                                      /* Карточка персонажа */
 .character {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 25px;
 
-    padding: 18px;
+    min-height: 230px;
+    padding: 25px;
 
-    background: rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(0, 0, 0, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
-    backdrop-filter: blur(5px);
-
-    transition: 0.4s;
+    transition: 0.3s ease;
 }
 
+                                                               /* Эффект при наведении */
 .character:hover {
-    background: rgba(0, 0, 0, 0.7);
-    border-color: rgba(180, 30, 30, 0.6);
+    border-color: #8b2020;
     transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(139, 32, 32, 0.2);
 }
 
-/* Фотографии */
-
+                                                                  /* Фотографии */
 .character img {
-    width: 135px;
-    height: 175px;
-
+    width: 170px;
+    height: 180px;
     object-fit: cover;
-    object-position: center;
-
-    filter: grayscale(35%);
+    flex-shrink: 0;
 }
 
-/* Текст */
-
+                                                                    /* Информация */
 .character-info h3 {
-    color: #e5dddd;
+    color: white;
     font-size: 23px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
 }
 
 .character-info span {
-    color: #9c3030;
-    font-size: 10px;
+    color: #a83232;
+    font-size: 11px;
     letter-spacing: 2px;
 }
 
 .character-info p {
-    color: #aaa;
-    font-size: 13px;
-    line-height: 1.7;
+    color: #c5c5c5;
+    font-size: 14px;
+    line-height: 1.6;
     margin-top: 12px;
 }
 
-/* Для телефона */
-
+                                                                /* Для телефона */
 @media (max-width: 768px) {
+
     .characters {
+        width: 92%;
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .character {
+        min-height: 170px;
+        padding: 15px;
+        gap: 15px;
     }
 
     .character img {
-        width: 110px;
-        height: 150px;
+        width: 115px;
+        height: 145px;
     }
 
-    .actor-second {
-        padding: 60px 5%;
-        background-attachment: scroll;
+    .character-info h3 {
+        font-size: 16px;
+    }
+
+    .character-info p {
+        font-size: 12px;
+    }
+}
+
+/* Заголовок над карточками */
+.characters-heading {
+    margin-bottom: 35px;
+}
+
+/* Чтобы карточки не сдвигались из-за заголовка */
+.characters {
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Заголовок карточек */
+.character-info h3 {
+    margin-top: 0;
+}
+
+/* Адаптация заголовка */
+@media (max-width: 768px) {
+    .characters-heading {
+        margin-bottom: 25px;
     }
 }

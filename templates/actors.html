@@ -41,61 +41,75 @@
     </div>
 </section>
 
-                         /*второй section*/
 
+                         <!-- второй section -->
 <section class="actor-second" id="characters">
 
     <div class="actor-second-content">
-        <h2>Они уже здесь...</h2>
-        <p>За каждой маской скрывается своя история.</p>
 
-        <section class="actor-second">
+        <!-- ЗАГОЛОВОК РАЗДЕЛА -->
+        <div class="characters-heading">
 
-    <div class="characters">
+            <span class="section-label">03 / THE CHARACTERS</span>
 
-        <div class="character">
-            <img src="static/image/monahia.jpeg" alt="Персонаж 1">
+            <h2>ОНИ УЖЕ ЗДЕСЬ...</h2>
 
-            <div class="character-info">
-                <h3>THE NUN</h3>
-                <span>01 / CHARACTER</span>
-                <p>Тишина, за которой скрывается нечто страшное.</p>
-            </div>
+            <div class="section-line"></div>
+
+            <h3>За каждой маской скрывается своя история.</h3>
+
+            <p>
+                У каждого из них своя роль, своя тайна.
+                Но готовы ли вы узнать, кто скрывается за маской?
+            </p>
+
+            <span class="section-warning">
+                НЕ ОТВОДИТЕ ГЛАЗА...
+            </span>
+
         </div>
 
-        <div class="character">
-            <img src="static/image/cloun.jpeg" alt="Персонаж 2">
+        <!-- КАРТОЧКИ ПЕРСОНАЖЕЙ -->
+        <div class="characters">
 
-            <div class="character-info">
-                <h3>THE CLOWN</h3>
-                <span>02 / CHARACTER</span>
-                <p>Улыбка, которая не сулит ничего хорошего.</p>
+            <div class="character">
+               <img src="{{ url_for('static', filename='image/monahia.jpeg') }}">
+                <div class="character-info">
+                    <h3>THE VALAK</h3>
+                    <span>01 / CHARACTER</span>
+                    <p>Тишина, за которой скрывается нечто страшное.</p>
+                </div>
             </div>
+
+            <div class="character">
+               <img src="{{ url_for('static', filename='image/cloun.jpeg') }}">
+                <div class="character-info">
+                    <h3>THE PENNYWISE</h3>
+                    <span>02 / CHARACTER</span>
+                    <p>Улыбка, которая не сулит ничего хорошего.</p>
+                </div>
+            </div>
+
+            <div class="character">
+                <img src="{{ url_for('static', filename='image/doctor.jpeg') }}">
+                <div class="character-info">
+                    <h3>THE PLAGUE DOCTOR</h3>
+                    <span>03 / CHARACTER</span>
+                    <p>Его появление всегда остаётся загадкой.</p>
+                </div>
+            </div>
+
+            <div class="character">
+               <img src="{{ url_for('static', filename='image/cadako yamamyra.jpeg') }}">
+                <div class="character-info">
+                    <h3>THE SADAKO YAMAMURA</h3>
+                    <span>04 / CHARACTER</span>
+                    <p>Некоторые истории лучше не раскрывать.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="character">
-            <img src="static/image/doctor.jpeg" alt="Персонаж 3">
-
-            <div class="character-info">
-                <h3>THE STRANGER</h3>
-                <span>03 / CHARACTER</span>
-                <p>Его появление всегда остаётся загадкой.</p>
-            </div>
-        </div>
-
-        <div class="character">
-            <img src="static/image/cadako yamamyra.jpeg" alt="Персонаж 4">
-
-            <div class="character-info">
-                <h3>THE UNKNOWN</h3>
-                <span>04 / CHARACTER</span>
-                <p>Некоторые истории лучше не раскрывать.</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
     </div>
 
 </section>
