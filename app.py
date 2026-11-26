@@ -13,6 +13,11 @@ def levels():
     return render_template("levels.html")
 
 
+@app.route("/actors")
+def actors():
+    return render_template("actors.html")
+
+
 
 
 
