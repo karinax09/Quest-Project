@@ -308,7 +308,6 @@ body {
 
                                                                  /* описаниее внизу которое */
 
-.level-description {
     .level-description {
     display: flex;
     align-items: flex-start;
@@ -332,4 +331,134 @@ body {
     font-size: 12px;
     line-height: 1.6;
     margin: 0;
+}
+         
+                                                /* чтобы когда наводим выделялось */
+.level-card {
+    transition: 
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    border-color: #b30000;
+
+    box-shadow:
+        0 0 15px rgba(180, 0, 0, 0.3),
+        0 0 35px rgba(120, 0, 0, 0.15);
+}
+
+                                         /* чтобы названия тожк подсвечивались  */
+.level-card:hover h3 {
+    text-shadow:
+        0 0 10px rgba(180, 0, 0, 0.8),
+        0 0 25px rgba(180, 0, 0, 0.5);
+}
+
+                                                  /* тут заголовок редактирую  */
+
+
+
+
+.levels-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Маленькая надпись сверху */
+
+.title-top {
+    display: block;
+
+    color: #8b0000;
+    font-size: 12px;
+    letter-spacing: 7px;
+
+    margin-bottom: 15px;
+
+    text-shadow: 0 0 10px rgba(180, 0, 0, 0.5);
+}
+
+
+/* Главный заголовок */
+
+.levels-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(55px, 8vw, 100px);
+    font-weight: 900;
+    letter-spacing: 12px;
+
+    color: #e0caca;
+
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.2),
+        0 0 20px rgba(150, 0, 0, 0.6),
+        0 0 45px rgba(100, 0, 0, 0.5);
+
+    margin: 0;
+}
+
+
+/* Красная линия под заголовком */
+
+.title-line {
+    width: 180px;
+    height: 2px;
+
+    margin: 20px auto;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #8b0000,
+        #d00000,
+        #8b0000,
+        transparent
+    );
+
+    box-shadow: 0 0 15px rgba(180, 0, 0, 0.6);
+}
+
+
+/* Подзаголовок */
+
+.levels-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 2.5vw, 27px);
+    font-weight: 400;
+
+    color: #b9a7a7;
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 12px #000;
+
+    margin: 0;
+}
+                                           /* при навдедении тоже выделялось */
+
+.levels-title h1:hover {
+    color: #fff;
+    transform: scale(1.04);
+
+    text-shadow:
+        0 0 10px rgba(255, 0, 0, 0.8),
+        0 0 30px rgba(180, 0, 0, 0.9),
+        0 0 60px rgba(120, 0, 0, 0.7);
+}
+
+
+                                          /* Предупреждение */
+
+.title-warning {
+    color: #650000;
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    margin-top: 20px;
+
+    text-shadow: 0 0 8px rgba(150, 0, 0, 0.4);
 }
